@@ -26,7 +26,7 @@
 
             public $image;
 
-            public function setImage()
+            public function setImage($image)
             {
                 $this->image = $image;
             }
@@ -59,7 +59,7 @@
             <div class="col-12">
                 <?php
                     $harryPotter_1 = new Movies('Harry Potter e la camera dei segreti', '2001', 'Fantasy');
-                    $harryPotter_1 = setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3s6pfzpaoVk3sI9MT2lQf_JqZrLdi-AcmR6-uBQzgBZ5w1Gbd');
+                    $harryPotter_1 -> setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3s6pfzpaoVk3sI9MT2lQf_JqZrLdi-AcmR6-uBQzgBZ5w1Gbd');
 
                     echo '<img src="'.$harryPotter_1->getImage().'">';
                     echo $harryPotter_1->getDescription();
